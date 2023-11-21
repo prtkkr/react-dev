@@ -1,28 +1,31 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// const heading = React.createElement(
-//   "h1",
-//   { id: "heading", abc: "xyz" },
-//   "Hello World from React!"
-// );
+// const heading = React.createElement("h1", { id: "heading" }, "React Dev 🚀");
+// const root = ReactDOM.createRoot(document.getElementById("root"));
 
-// Nested HTML using React
-const parent = React.createElement("div", {}, [
-  React.createElement("div", { id: "child1" }, [
-    React.createElement("h1", {}, "This is React Dev 🚀"),
-    React.createElement("h2", {}, "I am a h2 tag"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "This is Second React Dev"),
-    React.createElement("h2", {}, "I am a h2 tag"),
-  ]),
-]);
+// JSX
+const Title = () => {
+  return (
+    <>
+      <h1 className="heading" tabIndex="5">
+        React Dev using JSX 🚀
+      </h1>
+    </>
+  );
+};
 
-// console.log(heading); // returns an object
-// console.log(parent); // returns an object
+// React Functional Components
+const HeadingComponent = () => {
+  return (
+    <div id="container">
+      <Title />
+      {Title()}
+      <Title></Title>
+      <h2 className="head">React Functional Component</h2>
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-// console.log(root);
-
-root.render(parent);
+root.render(<HeadingComponent />);
