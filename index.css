@@ -26,6 +26,16 @@
   font-size: 18px;
 }
 
+.nav-items > ul > li > a {
+  all: unset;
+  cursor: pointer;
+}
+
+.nav-items > ul > li > a.active {
+  color: #259fff;
+  font-weight: bold;
+}
+
 .cart-logo {
   width: 24px;
   cursor: pointer;
@@ -35,6 +45,10 @@
   display: flex;
   flex-wrap: wrap;
   border: 1px solid #bdbdbd;
+}
+
+.res-container > a {
+  all: unset;
 }
 
 .res-card {
@@ -102,7 +116,7 @@ input.search-input::placeholder {
   height: 390px;
   padding: 5px;
   margin: 10px 8px;
-  background-image: linear-gradient(#f0f0f0, #d7d7d7);
+  background-image: linear-gradient(to right, #f0f0f0, #d7d7d7);
   border: 1px solid #bdbdbd;
 }
 
@@ -123,4 +137,23 @@ input.search-input::placeholder {
 .btn-login {
   font-size: 16px;
   cursor: pointer;
+}
+
+.res-menu-container {
+  border: 1px solid #bdbdbd;
+  margin: 10px 180px;
+  padding: 15px 25px;
+}
+
+.res-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.res-menu-item {
+  border-bottom: 1px solid #bdbdbd;
+  padding: 5px 10px;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-between;
 }

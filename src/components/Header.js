@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { CART_URL, LOGO_URL } from "../utils/constants";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [loginBtn, setLoginBtn] = useState("Login");
@@ -11,9 +12,15 @@ const Header = () => {
       </div>
       <div className="nav-items">
         <ul>
-          <li>Home</li>
-          <li>Contact Us</li>
-          <li>About Us</li>
+          <li>
+            <NavLink to="/">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact">Contact Us</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">About Us</NavLink>
+          </li>
           <li>
             <img className="cart-logo" src={CART_URL}></img>
           </li>
