@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [loginBtn, setLoginBtn] = useState("Login");
+  console.log(useState());
 
   return (
     <div className="header">

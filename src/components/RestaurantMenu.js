@@ -24,7 +24,7 @@ const RestaurantMenu = () => {
 
   const { name, cuisines, locality, city, logo, cloudinaryImageId } =
     resInfo?.cards[0]?.card?.card?.info;
-  console.log(resInfo?.cards[0]?.card?.card?.info);
+
   const itemCards =
     resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card
       ?.itemCards ||
@@ -32,7 +32,6 @@ const RestaurantMenu = () => {
       ?.itemCards ||
     resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card?.card
       ?.itemCards;
-  console.log(itemCards);
 
   return (
     <div className="res-menu-container">

@@ -157,3 +157,9 @@ input.search-input::placeholder {
   display: flex;
   justify-content: space-between;
 }
+
+.user-card {
+  border: 1px solid #bdbdbd;
+  padding: 20px;
+  margin-bottom: 15px;
+}
