@@ -23,14 +23,14 @@ const RestaurantMenu = () => {
   }
 
   const { name, cuisines, locality, city, logo, cloudinaryImageId } =
-    resInfo?.cards[0]?.card?.card?.info;
+    resInfo?.cards[2]?.card?.card?.info;
 
   const itemCards =
-    resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card
+      resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card?.card
+        ?.itemCards ||
+    resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[9]?.card?.card
       ?.itemCards ||
-    resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[9]?.card?.card
-      ?.itemCards ||
-    resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card?.card
+    resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card?.card
       ?.itemCards;
 
   return (

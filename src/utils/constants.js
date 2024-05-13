@@ -12,4 +12,5 @@ export const SWIGGY_URL =
 // "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=18.5679146&lng=73.91434319999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
 
 export const RESTAURANT_MENU_URL =
-  "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5679146&lng=73.91434319999999&catalog_qa=undefined&restaurantId=";
+  "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5679146&lng=73.91434319999999&catalog_qa=undefined&restaurantId=";
+  // "https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5679146&lng=73.91434319999999&catalog_qa=undefined&restaurantId=";
